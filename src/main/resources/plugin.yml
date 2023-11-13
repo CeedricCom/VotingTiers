@@ -1,0 +1,13 @@
+name: VotingTiers
+version: '${project.version}'
+main: com.ceedric.votingtiers.VotingTiers
+api-version: 1.19
+depend:
+  - Votifier
+  - SuperbVote
+  - PlaceholderAPI
+commands:
+  reloadvotingtiers:
+    permission: votingtiers.reload
+  evaluatevote:
+    permission: votingtiers.evaluate

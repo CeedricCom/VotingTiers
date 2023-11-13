@@ -1,0 +1,42 @@
+tiers:
+  1:
+    display-name: "Tier 1"
+    required-votes: 10
+    per-vote-rewards:
+      1:
+        type: item
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: GUNPOWDER
+          amount: 2
+      2:
+        type: command
+        commands:
+          - "minecraft:give %player% minecraft:paper 1"
+    every-cumulative-votes:
+      amount: 5
+      rewards:
+        1:
+          type: item
+          itemstack:
+            ==: org.bukkit.inventory.ItemStack
+            v: 19
+            type: GOLDEN_APPLE
+            amount: 2
+        2:
+          type: command
+          commands:
+            - "xp give %player% 500"
+    immediate-upgrade-rewards:
+      1:
+        type: item
+        itemstack:
+          ==: org.bukkit.inventory.ItemStack
+          v: 19
+          type: DIAMOND
+          amount: 2
+      2:
+        type: command
+        commands:
+          - "minecraft:give %player% minecraft:emerald 1"
